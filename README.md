@@ -2,7 +2,7 @@
 Import-Module .\ldap_path.ps1
 ```
 **Example enumeration with all users in domain**
-```sh
+```md
 LDAPSearch -LDAPQuery "(samAccountType=805306368)"
 ```
 **Example enumeration with all groups in domain**
