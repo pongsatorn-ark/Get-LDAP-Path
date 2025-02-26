@@ -16,5 +16,7 @@ foreach ($group in $(LDAPSearch -LDAPQuery "(objectCategory=group)")) {$group.pr
 **Example search for group**
 ```sh
 $group = LDAPSearch -LDAPQuery "(&(objectCategory=group)(cn=<group name>))"
+```
+```sh
 $group.properties.member
 ```
