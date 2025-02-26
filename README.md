@@ -15,5 +15,5 @@ foreach ($group in $(LDAPSearch -LDAPQuery "(objectCategory=group)")) {$group.pr
 ```
 **Example search for group**
 ```sh
-$sales = LDAPSearch -LDAPQuery "(&(objectCategory=group)(cn=<group name>))"
+LDAPSearch -LDAPQuery "(&(objectCategory=group)(cn=<group name>))"
 ```
