@@ -10,4 +10,4 @@ LDAPSearch -LDAPQuery "(objectclass=group)"
 
 **Example enumerate every group available in the domain and display the user members**
 
-'foreach ($group in $(LDAPSearch -LDAPQuery "(objectCategory=group)")) { $group.properties | select {$_.cn}, {$_.member}}'
+foreach (\$group in \$(LDAPSearch -LDAPQuery "(objectCategory=group)")) {\$group.properties | select {\$_.cn}, {\$_.member}}
